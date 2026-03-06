@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --var-bg-color:#7743e9;
+    --var-seconday-color:#6e51cf;
+    --var-text-color:#fff;
+    --var-text-color-dark:#333;
+    --var-color-light:#f0f4ff;
+    --var-seconsary-light:#d3C9F3;
+}
+body{
+    font-family: "poppins",sans-serif;
+    background-color: var(--var-color-light);
+    color: var(--var-text-color-dark);
+}
+header{
+    height: 4rem;
+    background-color: var(--var-text-color);
+    padding: 0 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+header h1{
+    font-size: 2rem;
+    color: var(--var-text-color-dark);
+    padding:0 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2rem;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+header nav ul a{
+    text-decoration: none;
+    color: var(--var-text-color-dark);
+    font-weight: 500;
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+header nav ul a:hover{
+    color: var(--var-seconday-color);
+}
+header button{
+    background-color: var(--var-seconday-color);
+    color: var(--var-text-color);
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+header button:hover{
+    background-color: var(--var-text-color-dark);
+}
+main{
+    padding: 2rem;
+}
+#accueil {
+    width: 100%;
+    height: 70vh;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: var(--var-seconday-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#accueil .gauche{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--var-text-color);
+}
+#accueil .gauche h2{
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 2rem;
+}
+#accueil .gauche p{
+    font-size: 25px;
+    color: var(--var-text-color);
+    text-transform: capitalize;
+}
+#accueil .gauche button{
+  
+    background: var(--var-seconsary-light);
+    color: var(--var-text-color-dark);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.5s;
+    position: relative;
+    left: 18rem;
+   
+}
+#accueil .gauche button:hover{
+    background: rgb(184, 98, 58);
+    color: white;
+}
+#accueil .droit{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#accueil .droit img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#services{
+    margin-top: 2rem;
+}
+#services h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color:var(--var-text-color-dark);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.list_service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.list_service .card{
+    flex: 1;
+    background-color: var(--var-text-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.list_service .card .icon{
+    width: 50px;
+    height: 50px;
+    background-color: #ccb6fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: -1.5rem;
+}
+.list_service .card .icon i{
+    font-size: 1.2rem;
+}
+.list_service .card h1{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.album{
+    margin-top: 2rem;
+}
+.album h2{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.album .photo{
+    display: grid;
+     grid-template-columns:repeat(2,1fr);
+     gap: 1rem;
+}
+.photo img{
+    width: 90%;
+    border-radius: 1rem;
+}
+#contact{
+    margin-top: 2rem;
+    display: flex;
+    height: calc(100vh - 200px);
+    background-color: var(--var-text-color);
+}
+#contact .left, .right{
+    flex: 1;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding: 2rem;
+    height: 100%;
+}
+#contact .left{
+    background-color: #ccb6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+#contact h2{
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: var(--var-text-color-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contact form{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#contact form input,textarea{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.6s;
+}
+#contact form textarea{
+    height: 100px;
+}
+#contact form input, textarea:focus{
+    border: 1px solid var(--var-bg-color);
+}
+#contact form button{
+    background-color:var(--var-seconday-color);
+    color: var(--var-text-color-dark);
+    font-size: 1.3rem;
+    font-weight: 600;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#contact form button:hover{
+    background-color: rgb(199, 141, 114);
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: var(--var-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 900;
+    border-radius: 1rem;
+}
+.reseau{
+    position: fixed;
+    right: 0;
+    bottom: 3px;
+    background-color:#ccb6fa ;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.reseau .view{
+    width: 30px;
+    height: 30px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.view:hover{
+    background-color: var(--var-text-color);
+    border-radius: 0.8rem;
+}
